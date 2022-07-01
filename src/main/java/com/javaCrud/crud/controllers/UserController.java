@@ -23,7 +23,7 @@ public class UserController {
     }
 
     @GetMapping("/{idUser}")
-    public User getUser(@PathVariable("alunoId") String idUser){
+    public User getUser(@PathVariable("idUser") String idUser){
 
         return userService.getUser(idUser);
     }
